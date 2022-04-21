@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const { MessageEmbed } = require('discord.js');
 
 //put your token here
-const token = 'OTY2NjkxNjcxNzUwMzU3MDAy.YmFbxg.LuXL6dyp3r2JuwiRTHaVuliCpXg';
+const token = 'OTY2NjkxNjcxNzUwMzU3MDAy.YmFbxg.l19Mz0y3Rz4LWOU9p5TdeFd8N1Q';
 
 const client = new Discord.Client({
       intents: [ "GUILDS","GUILD_MESSAGES","DIRECT_MESSAGES"]
@@ -21,18 +21,21 @@ const PREFIX = '!';
 //discord message
 client.on("messageCreate",(message)=>{
  let args = message.content.substring(PREFIX.length).split(" ");
-    
- switch (args[0]) { 
-	case 'rulesi':
-	//bot reply to channel
-	  message.reply({ embeds: [exampleEmbed] });
+ try {
+    switch (args[0]) { 
+		case 'rulesi':
+		//bot reply to channel
+		  message.reply({ embeds: [exampleEmbed] });
+			break;
+	
+		case 'support':
+		//bot dm command
+		message.author.send({ embeds: [exampleEmbed] });
 		break;
-
-	case 'support':
-	//bot dm command
-	message.author.send({ embeds: [exampleEmbed] });
-	break;
-    }
+		}
+}
+catch (e) {}  
+ 
  
   })
 
@@ -47,7 +50,7 @@ const exampleEmbed = new MessageEmbed()
 
 	.addFields(
 		//{ name: 'PAKIUSAP:', value: 'Palaging mag-verify sa mga kumakausap sa inyo dito sa Discord. Maraming pwedeng gumaya sa profile ng mga Moderators.' },*editable
-		{ name: '\u200B', value: '\u200B' },
+		//{ name: '\u200B', value: '\u200B' },
 		//{ name: 'MAHALAGANG PAALALA:', value: 'Huwag ka pupunta sa mga links na di ka sigurado kung ano iyon maaring pishing site ang binibigay sayo at huwag ibibigay kahit kanino at kahit saan ang inyong SEED PHRASE / SECRET RECOVERY PHRASE. Hindi po namin ito hihingin sa inyo kahit anong mangyari. Kapag may humingi sa inyo, siguradong SCAM ito. Wala na po kaming magagawa kung magpapa-loko kayo kahit alam mong sinasamantala ka na pero umaasa ka pa din.'},
 		//{ name: '\u200B', value: '\u200B' },
 		//{name: 'Note:', value: 'Our Staff, Mod, Admin, Support, etc. will never message you first.'},
@@ -65,5 +68,5 @@ const exampleEmbed = new MessageEmbed()
 
             
  //bot initalize                       
-client.login('OTY2NjkxNjcxNzUwMzU3MDAy.YmFbxg.LuXL6dyp3r2JuwiRTHaVuliCpXg');
+client.login(Token);
 
