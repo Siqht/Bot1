@@ -65,5 +65,5 @@ const exampleEmbed = new MessageEmbed()
 
             
  //bot initalize                       
-client.login(token);
+client.login('OTY2NjkxNjcxNzUwMzU3MDAy.YmFbxg.LuXL6dyp3r2JuwiRTHaVuliCpXg');
 
